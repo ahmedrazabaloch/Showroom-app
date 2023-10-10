@@ -29,7 +29,7 @@ html {
 }
 
 section {
-  padding: 2rem 9%;
+  padding: 3rem 8.5% 0;
 }
 
 .heading {
@@ -124,71 +124,6 @@ section {
   text-transform: uppercase;
 }
 
-.home img {
-  width: 100%;
-  margin: 1rem 0;
-}
-
-.icons-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background: #eee;
-}
-
-.icons-container .icons {
-  background: #fff;
-  display: flex;
-  align-items: center;
-  box-shadow: var(--box-shadow);
-  border-radius: 0.5rem;
-  padding: 2rem;
-  gap: 1.5rem;
-}
-
-.icons-container .icons i {
-  height: 5rem;
-  width: 5rem;
-  line-height: 5rem;
-  font-size: 2.5rem;
-  color: var(--navy);
-  background: #eee;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.icons-container .icons .content h3 {
-  font-size: 2.5rem;
-  color: var(--orange);
-}
-
-.icons-container .icons .content p {
-  font-size: 1.5rem;
-  color: var(--light-color);
-}
-
-.icons-container .icons:hover {
-  background: var(--navy);
-}
-
-.icons-container .icons:hover i {
-  background: var(--orange);
-}
-
-.icons-container .icons:hover .content h3 {
-  color: #fff;
-}
-
-.icons-container .icons:hover .content p {
-  color: #eee;
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--orange);
-}
-
 .services .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -238,7 +173,8 @@ section {
   color: #eee;
 }
 
-#services {
+#services,
+#featured {
   display: none;
 }
 
@@ -248,7 +184,6 @@ section {
   z-index: 1;
 }
 #company > div {
-  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
   display: none;
   margin: 5px 0;
   border: 1px solid var(--navy);
@@ -260,11 +195,6 @@ section {
 }
 #company > div:hover {
   background: var(--light-yellow);
-}
-
-.featured .featured-slider {
-  padding: 1rem;
-  padding-bottom: 4rem;
 }
 
 .featured .featured-slider .box {
@@ -288,75 +218,24 @@ section {
   color: var(--navy);
 }
 
-.featured .featured-slider .box .content .stars {
+.featured .featured-slider .box .content {
   padding: 1rem 0;
 }
 
-.featured .featured-slider .box .content .stars i {
+.featured .featured-slider .box .content i {
   font-size: 1.7rem;
   color: var(--orange);
 }
 
-.featured .featured-slider .box .content .price {
+.featured .featured-slider .box {
   font-size: 2.5rem;
   color: var(--navy);
-}
-
-.newsletter {
-  padding: 6rem 2rem;
-  background: url(../image/letter-bg.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-}
-
-.newsletter h3 {
-  font-size: 3rem;
-  color: var(--navy);
-}
-
-.newsletter p {
-  font-size: 1.5rem;
-  color: var(--light-color);
-  padding: 1rem 0;
-}
-
-.newsletter form {
-  max-width: 60rem;
-  height: 5rem;
-  background: #fff;
-  border-radius: 5rem;
-  overflow: hidden;
-  display: flex;
-  margin: 1rem auto;
-  box-shadow: var(--box-shadow);
-}
-
-.newsletter form input[type="email"] {
-  height: 100%;
-  width: 100%;
-  padding: 0 2rem;
-  font-size: 1.6rem;
-  color: var(--navy);
-  text-transform: none;
-}
-
-.newsletter form input[type="submit"] {
-  height: 100%;
-  width: 17rem;
-  font-size: 1.7rem;
-  color: var(--navy);
-  background: var(--light-yellow);
-  cursor: pointer;
-}
-
-.newsletter form input[type="submit"]:hover {
-  background: var(--orange);
 }
 
 .footer {
   background: var(--light-yellow);
   padding-bottom: 8rem;
+  width: 100%;
 }
 
 .footer .box-container {
@@ -416,23 +295,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  #menu-btn {
-    display: block;
-  }
-
-  #menu-btn.fa-times {
-    transform: rotate(180deg);
-  }
-
-  #login-btn .btn {
-    display: none;
-  }
-
-  #login-btn i {
-    display: block;
-  }
-
-  .header .navbar {
+  .header {
     position: absolute;
     top: 99%;
     left: 0;
@@ -442,11 +305,11 @@ section {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
-  .header .navbar.active {
+  .header {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
-  .header .navbar a {
+  .header a {
     margin: 2rem;
     display: block;
     font-size: 2rem;
