@@ -67,6 +67,7 @@ section {
   border-radius: 0.5rem;
   font-weight: 500;
   text-align: center;
+  position: relative;
 }
 
 .btn:hover {
@@ -239,6 +240,26 @@ section {
 
 #services {
   display: none;
+}
+
+#company {
+  /* position: absolute; */
+  min-width: 160px;
+  z-index: 1;
+}
+#company > div {
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  display: none;
+  margin: 5px 0;
+  border: 1px solid var(--navy);
+  padding: 5px;
+  background: var(--orange);
+}
+.btn:hover #company > div {
+  display: block;
+}
+#company > div:hover {
+  background: var(--light-yellow);
 }
 
 .featured .featured-slider {
