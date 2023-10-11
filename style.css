@@ -122,6 +122,9 @@ section {
   color: var(--navy);
   font-size: 7.5vw;
   text-transform: uppercase;
+  padding: 10rem 0;
+  line-height: 9.5rem;
+
 }
 
 .services .box-container {

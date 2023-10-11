@@ -11,23 +11,7 @@ function selected(e) {
   var selection = document.getElementById("selection");
   selection.innerHTML = company.innerHTML;
   var select = selection.innerHTML;
-  switch (select) {
-    case "Hyundai":
-      alert("Hyundai");
-      break;
-    case "Toyota":
-      alert("Toyota");
-      break;
-    case "Suzuki":
-      alert("Suzuki");
-      break;
-    case "Honda":
-      alert("Honda");
-      break;
-    case "KIA":
-      alert("KIA");
-      break;
-  }
+
   console.log(select);
 }
 
@@ -244,3 +228,7 @@ var cars = {
     },
   },
 };
+
+for (var key in cars) {
+  console.log(key);
+}
