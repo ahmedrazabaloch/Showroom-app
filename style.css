@@ -124,7 +124,6 @@ section {
   text-transform: uppercase;
   padding: 10rem 0;
   line-height: 9.5rem;
-
 }
 
 .services .box-container {
@@ -175,12 +174,23 @@ section {
 .services .box-container .box:hover p {
   color: #eee;
 }
-
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 #services,
 #featured {
-  display: none;
+  /* display: none; */
 }
-
+.list-group-item img {
+  float: left;
+  width: 30px;
+  object-fit: contain;
+}
+.list-group-item {
+  font-size: 2rem;
+}
 #company {
   /* position: absolute; */
   min-width: 160px;
@@ -208,13 +218,13 @@ section {
   border-radius: 0.5rem;
 }
 
-.featured .featured-slider .box img {
+/* .featured .featured-slider .box img {
   height: 15rem;
-}
+} */
 
-.featured .featured-slider .box:hover img {
+/* .featured .featured-slider .box:hover img {
   transform: scale(0.9);
-}
+} */
 
 .featured .featured-slider .box .content h3 {
   font-size: 2.2rem;
