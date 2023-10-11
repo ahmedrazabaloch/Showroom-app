@@ -6,11 +6,12 @@ function buycars() {
   featured.display = "block";
 }
 
-function company(e) {
+function selected(e) {
   var company = event.target;
   var selection = document.getElementById("selection");
   selection.innerHTML = company.innerHTML;
-  console.log(selection.innerHTML);
+  var select = selection.innerHTML;
+  console.log(select);
 }
 
 var cars = {
