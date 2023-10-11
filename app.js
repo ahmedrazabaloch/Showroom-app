@@ -6,6 +6,13 @@ function buycars() {
   featured.display = "block";
 }
 
+function company(e) {
+  var company = event.target;
+  var selection = document.getElementById("selection");
+  selection.innerHTML = company.innerHTML;
+  console.log(selection.innerHTML);
+}
+
 var cars = {
   hyundai: {
     Sonata: {
@@ -219,4 +226,3 @@ var cars = {
     },
   },
 };
-console.log(cars.honda.City);

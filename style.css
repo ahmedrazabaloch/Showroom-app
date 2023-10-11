@@ -295,7 +295,23 @@ section {
 }
 
 @media (max-width: 768px) {
-  .header {
+  #menu-btn {
+    display: block;
+  }
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
+  #login-btn .btn {
+    display: none;
+  }
+
+  #login-btn i {
+    display: block;
+  }
+
+  .header .navbar {
     position: absolute;
     top: 99%;
     left: 0;
@@ -305,11 +321,11 @@ section {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
-  .header {
+  .header .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
-  .header a {
+  .header .navbar a {
     margin: 2rem;
     display: block;
     font-size: 2rem;
