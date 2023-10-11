@@ -38,7 +38,12 @@
           <i class="fas fa-car"></i>
           <h3>Select a Company</h3>
           <p>We have the world's best company cars</p>
-          <a class="btn">
+
+          <select id="company" onchange="companyToBrand()">
+            <option value="">Select Company</option>
+          </select>
+
+          <!-- <a class="btn">
             <div id="selection">Select</div>
             <div class="company" id="company">
               <div onclick="selected(this)">Hyundai</div>
@@ -47,7 +52,16 @@
               <div onclick="selected(this)">Honda</div>
               <div onclick="selected(this)">KIA</div>
             </div>
-          </a>
+          </a> -->
+        </div>
+
+        <div class="box">
+          <i class="fas fa-car"></i>
+          <h3>Select a Model</h3>
+          <p>We have the world's best company cars</p>
+          <select id="brand">
+            <option value="">Choice a car</option>
+          </select>
         </div>
 
         <!-- <div class="box">

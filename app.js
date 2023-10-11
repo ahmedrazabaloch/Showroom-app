@@ -6,14 +6,14 @@ function buycars() {
   featured.display = "block";
 }
 
-function selected(e) {
-  var company = event.target;
-  var selection = document.getElementById("selection");
-  selection.innerHTML = company.innerHTML;
-  var select = selection.innerHTML;
+// function selected(e) {
+//   var company = event.target;
+//   var selection = document.getElementById("selection");
+//   selection.innerHTML = company.innerHTML;
+//   var select = selection.innerHTML;
 
-  console.log(select);
-}
+//   console.log(select);
+// }
 
 var cars = {
   hyundai: {
@@ -229,6 +229,22 @@ var cars = {
   },
 };
 
+var company = document.getElementById("company");
+var brand = document.getElementById("brand");
+
+brand.innerHTML = `<option value="">Choice a car</option>`;
+
 for (var key in cars) {
-  console.log(key);
+  company.innerHTML += `
+  <option value="${key}">${key.toUpperCase()}</option>
+  `;
+}
+function companyToBrand() {
+  brand.innerHTML = "";
+  brand.innerHTML = `<option value="">Choice a car</option>`;
+  for (var key in cars[company.value]) {
+    brand.innerHTML += `
+    <option value="${key}">${key.toUpperCase()}</option>
+  `;
+  }
 }
