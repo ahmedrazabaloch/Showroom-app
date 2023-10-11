@@ -125,6 +125,9 @@ section {
   padding: 10rem 0;
   line-height: 9.5rem;
 }
+#find {
+  padding: 2.5rem 0;
+}
 
 .services .box-container {
   display: grid;
@@ -184,15 +187,17 @@ section {
   /* display: none; */
 }
 .list-group-item img {
-  float: left;
   width: 30px;
   object-fit: contain;
 }
 .list-group-item {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.5rem;
 }
 #company {
-  /* position: absolute; */
   min-width: 160px;
   z-index: 1;
 }
@@ -247,8 +252,10 @@ section {
 
 .footer {
   background: var(--light-yellow);
-  padding-bottom: 8rem;
+  padding-top: 8rem;
   width: 100%;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
 }
 
 .footer .box-container {
