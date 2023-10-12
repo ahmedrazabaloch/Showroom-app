@@ -33,7 +33,7 @@ section {
 }
 
 .heading {
-  padding-bottom: 2rem;
+  padding-bottom: 4.5rem;
   text-align: center;
   font-size: 4.5rem;
   color: var(--navy);
@@ -203,19 +203,6 @@ section {
   padding: 0 10px;
   width: 20rem;
   border-radius: 5px;
-}
-#company > div {
-  display: none;
-  margin: 5px 0;
-  border: 1px solid var(--navy);
-  padding: 5px;
-  background: var(--orange);
-}
-.btn:hover #company > div {
-  display: block;
-}
-#company > div:hover {
-  background: var(--light-yellow);
 }
 
 .featured .featured-slider .box {
