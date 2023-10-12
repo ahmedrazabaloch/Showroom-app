@@ -18,6 +18,7 @@ function buycars() {
 var cars = {
   hyundai: {
     Sonata: {
+      image: "img/cars/hyundai/Sonata.jpg",
       name: "Hyundai Sonata",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -27,6 +28,7 @@ var cars = {
       price: "112 Lakh",
     },
     Tucson: {
+      image: "img/cars/hyundai/tucson.webp",
       name: "Hyundai Sonata",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -36,6 +38,7 @@ var cars = {
       price: "112 Lakh",
     },
     Accent: {
+      image: "img/cars/hyundai/Accent.avif",
       name: "Hyundai Sonata",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -45,6 +48,7 @@ var cars = {
       price: "112 Lakh",
     },
     SantaFe: {
+      image: "img/cars/hyundai/SantaFe.png",
       name: "Hyundai Sonata",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -56,6 +60,7 @@ var cars = {
   },
   toyota: {
     Camry: {
+      image: "img/cars/toyota/Camry.jpg",
       name: "Toyota Camry",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -65,6 +70,7 @@ var cars = {
       price: "112 Lakh",
     },
     Corolla: {
+      image: "img/cars/toyota/Corolla.png",
       name: "Toyota Corolla",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -75,6 +81,7 @@ var cars = {
     },
 
     Prius: {
+      image: "img/cars/toyota/Prius.webp",
       name: "Toyota Prius",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -84,6 +91,7 @@ var cars = {
       price: "112 Lakh",
     },
     Fortuner: {
+      image: "img/cars/toyota/Fortuner.png",
       name: "Toyota Fortuner",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -95,6 +103,7 @@ var cars = {
   },
   suzuki: {
     Swift: {
+      image: "img/cars/suzuki/swift.webp",
       name: "Suzuki Swift",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -104,6 +113,7 @@ var cars = {
       price: "112 Lakh",
     },
     Alto: {
+      image: "img/cars/suzuki/Alto.jpg",
       name: "Suzuki Alto",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -113,6 +123,7 @@ var cars = {
       price: "112 Lakh",
     },
     Mehran: {
+      image: "img/cars/suzuki/Mehran.jpg",
       name: "Suzuki Mehran",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -122,6 +133,7 @@ var cars = {
       price: "112 Lakh",
     },
     Carry: {
+      image: "img/cars/suzuki/Carry.jpg",
       name: "Suzuki Carry",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -133,6 +145,7 @@ var cars = {
   },
   honda: {
     Civic: {
+      image: "img/cars/honda/Civic.jpg",
       name: "Honda Civic",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -142,6 +155,7 @@ var cars = {
       price: "112 Lakh",
     },
     City: {
+      image: "img/cars/honda/city.jpg",
       name: "Honda City",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -151,6 +165,7 @@ var cars = {
       price: "112 Lakh",
     },
     BRV: {
+      image: "img/cars/honda/br-v.webp",
       name: "Honda BR-V",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -160,6 +175,7 @@ var cars = {
       price: "112 Lakh",
     },
     Hybrid: {
+      image: "img/cars/honda/Hybrid.webp",
       name: "Honda CR-V Hybrid",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -171,6 +187,7 @@ var cars = {
   },
   kia: {
     Sportage: {
+      image: "img/cars/kia/Sportage.png",
       name: "Kia Sportage",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -180,6 +197,7 @@ var cars = {
       price: "112 Lakh",
     },
     Sorento: {
+      image: "img/cars/kia/Sorento.jpg",
       name: "Kia Sorento",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -189,6 +207,7 @@ var cars = {
       price: "112 Lakh",
     },
     Rio: {
+      image: "img/cars/kia/Rio.jpg",
       name: "Kia Rio",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -198,6 +217,7 @@ var cars = {
       price: "112 Lakh",
     },
     Stinger: {
+      image: "img/cars/kia/Stinger.webp",
       name: "Kia Stinger",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
@@ -225,7 +245,7 @@ for (var key in cars) {
     allCars.innerHTML = `
       <div class="card" style="width: 25rem">
       <img
-        src="img/cars/honda/Hyundai-Sonata-Front.jpg"
+        src="${carsDetails.image}"
         class="card-img-top"
       />
       <div class="card-body">
