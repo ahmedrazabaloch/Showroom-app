@@ -1,3 +1,10 @@
+setTimeout(function () {
+  var carAnimition = document.getElementById("animition1");
+  carAnimition.style.display = "none";
+  var hiddenItem = document.getElementById("hiddenItem");
+  hiddenItem.style.display = "inline-block";
+}, 4000);
+
 function buycars() {
   var services = document.getElementById("services").style;
   var featured = document.getElementById("featured").style;

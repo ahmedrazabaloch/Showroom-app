@@ -297,6 +297,16 @@ img.card-img-top {
   object-fit: contain;
 }
 
+#animition1{
+  position: absolute;
+  top: 48%;
+  left: 30vw;
+}
+
+#hiddenItem{
+  display: none;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
