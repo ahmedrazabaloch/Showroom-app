@@ -197,9 +197,12 @@ section {
   justify-content: space-between;
   padding: 0.8rem 1.5rem;
 }
-#company {
-  min-width: 160px;
-  z-index: 1;
+#company,
+#brand {
+  font-size: 1.8rem;
+  padding: 0 10px;
+  width: 20rem;
+  border-radius: 5px;
 }
 #company > div {
   display: none;
