@@ -7,10 +7,9 @@ setTimeout(function () {
 
 function buycars() {
   var services = document.getElementById("services").style;
-  var featured = document.getElementById("featured").style;
-
   services.display = "block";
-  featured.display = "block";
+  var find = document.getElementById("find").style;
+  find.display = "block";
 }
 
 var cars = {
@@ -296,10 +295,13 @@ function companyToBrand() {
 var showAll = document.getElementById("showAll");
 
 function filterCars() {
+  var featured = document.getElementById("featured").style;
+  featured.display = "block";
+
   var selectedCompany = company.value;
   var selectedBrand = brand.value;
-  showAll.innerText = "Show All";
-
+  // showAll.innerText = "Show All";
+  showAll.style.display = "none";
   if (selectedCompany && selectedBrand) {
     var carDetails = cars[selectedCompany][selectedBrand];
 

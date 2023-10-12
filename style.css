@@ -166,7 +166,7 @@ section {
   color: var(--light-color);
 }
 
-.services .box-container .box:hover {
+.services .box-container .boxHover:hover {
   background: var(--navy);
 }
 
@@ -183,12 +183,13 @@ section {
   justify-content: space-between;
 }
 #services,
-#featured {
-  /* display: none; */
+#featured,
+#find {
+  display: none;
+  /* visibility: hidden; */
 }
 .list-group-item img {
   width: 30px;
-  /* object-fit: contain; */
 }
 
 .list-group-item {
@@ -307,6 +308,7 @@ img.card-img-top {
   position: absolute;
   top: 48%;
   left: 30vw;
+  z-index: -1;
 }
 
 #hiddenItem {

@@ -31,14 +31,14 @@
     <section class="home" id="home">
       <h3 class="home-parallax">Your Car, Your Identity</h3>
       <div id="animition1"><img src="img/Interceptor.gif"></div>
-      <a href="#services" id="hiddenItem" class="btn home-parallax" onclick="buycars()"
+      <a href="#company" id="hiddenItem" class="btn home-parallax animate__animated  animate__rotateIn" onclick="buycars()"
         >click to buy</a
       >
     </section>
     <section class="services animate__animated animate__fadeInDown" id="services">
       <h1 class="heading">What <span>We Have</span></h1>
       <div class="box-container">
-        <div class="box">
+        <div class="box boxHover">
           <i class="fas fa-car"></i>
           <h3>Select a Company</h3>
           <p>We have the world's best company cars</p>
@@ -46,7 +46,7 @@
             <option value="showAll" id="showAll">Select Company</option>
           </select>
         </div>
-        <div class="box">
+        <div class="box boxHover">
           <i class="fas fa-car"></i>
           <h3>Select a Model</h3>
           <p>We have the world's best company cars</p>
@@ -57,13 +57,12 @@
       </div>
     </section>
     <section class="home" id="find">
-      <a class="btn home-parallax" type="button" onclick="filterCars()"
+      <a href="#allCars" class="btn home-parallax animate__animated animate__rotateInUpRight" type="button" onclick="filterCars()"
         >Find your love</a
       >
     </section>
-    <section class="services animate__animated animate__fadeInDown" id="services"></section>
-    <h1 class="heading"><span>Details</span> Specifications</h1>
-    <section class="featured" id="featured">
+    <section class="featured services animate__animated animate__zoomInDown" id="featured">
+      <h1 class="heading"><span>Details</span> Specifications</h1>
       <div class="swiper featured-slider">
         <div class="swiper-wrapper">
           <section class="footer" id="footer">
