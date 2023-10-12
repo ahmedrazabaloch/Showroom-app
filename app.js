@@ -241,40 +241,40 @@ for (var key in cars) {
   `;
 
   for (var key1 in cars[key]) {
-    var carsDetails = cars[key][key1];
-    allCars.innerHTML = `
+    allCars.innerHTML += `
       <div class="card" style="width: 25rem">
       <img
-        src="${carsDetails.image}"
+        src="${cars[key][key1].image}"
         class="card-img-top"
       />
       <div class="card-body">
-        <h1 class="card-title">${carsDetails.name}</h1>
+        <h1 class="card-title">${cars[key][key1].name}</h1>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          <img src="img/icons/engine.png" alt="" /> ${carsDetails.engine}
+          <img src="img/icons/engine.png" alt="" /> ${cars[key][key1].engine}
         </li>
         <li class="list-group-item">
-          <img src="img/icons/speed-meter.png" alt="" />${carsDetails.MaxPower}
+          <img src="img/icons/speed-meter.png" alt="" />${cars[key][key1].MaxPower}
         </li>
         <li class="list-group-item">
-          <img src="img/icons/car-door.png" alt="" />${carsDetails.door}
+          <img src="img/icons/car-door.png" alt="" />${cars[key][key1].door}
         </li>
         <li class="list-group-item">
-          <img src="img/icons/full-tank.png" alt="" />${carsDetails.FuelTank}
+          <img src="img/icons/full-tank.png" alt="" />${cars[key][key1].FuelTank}
         </li>
         <li class="list-group-item">
-          <img src="img/icons/color.png" alt="" /> ${carsDetails.color}
+          <img src="img/icons/color.png" alt="" /> ${cars[key][key1].color}
         </li>
         <li class="list-group-item">
-          <img src="img/icons/price.png" alt="" /> ${carsDetails.price}
+          <img src="img/icons/price.png" alt="" /> ${cars[key][key1].price}
         </li>
       </ul>
     </div>
       `;
   }
 }
+
 function companyToBrand() {
   brand.innerHTML = "";
   brand.innerHTML = `<option value="">Choice a car</option>`;
@@ -282,5 +282,45 @@ function companyToBrand() {
     brand.innerHTML += `
     <option value="${key}">${key.toUpperCase()}</option>
   `;
+  }
+}
+
+function filterCars() {
+  var selectedCompany = company.value;
+  var selectedBrand = brand.value;
+
+  if (selectedCompany && selectedBrand) {
+    var carDetails = cars[selectedCompany][selectedBrand];
+
+    allCars.innerHTML = `
+      <div class="card" style="width: 25rem">
+        <img src="${carDetails.image}" class="card-img-top" />
+        <div class="card-body">
+          <h1 class="card-title">${carDetails.name}</h1>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <img src="img/icons/engine.png" alt="" /> ${carDetails.engine}
+          </li>
+          <li class="list-group-item">
+            <img src="img/icons/speed-meter.png" alt="" /> ${carDetails.MaxPower}
+          </li>
+          <li class="list-group-item">
+            <img src="img/icons/car-door.png" alt="" /> ${carDetails.door}
+          </li>
+          <li class="list-group-item">
+            <img src="img/icons/full-tank.png" alt="" /> ${carDetails.FuelTank}
+          </li>
+          <li class="list-group-item">
+            <img src="img/icons/color.png" alt="" /> ${carDetails.color}
+          </li>
+          <li class="list-group-item">
+            <img src="img/icons/price.png" alt="" /> ${carDetails.price}
+          </li>
+        </ul>
+      </div>
+    `;
+  } else {
+    allCars.innerHTML = "Please select a company and a car model.";
   }
 }

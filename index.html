@@ -9,17 +9,14 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-
     <link rel="stylesheet" href="style.css" />
     <title>Ar Showroom</title>
   </head>
@@ -27,28 +24,23 @@
     <header class="header">
       <a class="logo"> <span>Buy</span>Cars</a>
     </header>
-
     <section class="home" id="home">
       <h3 class="home-parallax">Your Car, Your Identity</h3>
-
       <a href="#services" class="btn home-parallax" onclick="buycars()"
         >click to buy</a
       >
     </section>
     <section class="services" id="services">
       <h1 class="heading">What <span>We Have</span></h1>
-
       <div class="box-container">
         <div class="box">
           <i class="fas fa-car"></i>
           <h3>Select a Company</h3>
           <p>We have the world's best company cars</p>
-
           <select id="company" onchange="companyToBrand()">
             <option value="">Select Company</option>
           </select>
         </div>
-
         <div class="box">
           <i class="fas fa-car"></i>
           <h3>Select a Model</h3>
@@ -60,13 +52,11 @@
       </div>
     </section>
     <section class="home" id="find">
-      <a href="#services" class="btn home-parallax" onclick="buycars()"
+      <a class="btn home-parallax" type="button" onclick="filterCars()"
         >Find your love</a
       >
     </section>
-
     <section class="services" id="services"></section>
-
     <h1 class="heading"><span>Details</span> Specifications</h1>
     <section class="featured" id="featured">
       <div class="swiper featured-slider">
@@ -80,7 +70,6 @@
         </div>
       </div>
     </section>
-
     <script src="app.js"></script>
   </body>
 </html>

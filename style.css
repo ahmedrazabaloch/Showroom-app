@@ -286,6 +286,10 @@ section {
   color: var(--navy);
 }
 
+.card{
+  margin-bottom: 10px;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
