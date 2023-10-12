@@ -19,7 +19,7 @@ var cars = {
   hyundai: {
     Sonata: {
       image: "img/cars/hyundai/Sonata.jpg",
-      name: "Hyundai Sonata",
+      name: "Sonata",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -29,7 +29,7 @@ var cars = {
     },
     Tucson: {
       image: "img/cars/hyundai/tucson.webp",
-      name: "Hyundai Sonata",
+      name: "Tucson",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -39,7 +39,7 @@ var cars = {
     },
     Accent: {
       image: "img/cars/hyundai/Accent.avif",
-      name: "Hyundai Sonata",
+      name: "Accent",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -49,7 +49,7 @@ var cars = {
     },
     SantaFe: {
       image: "img/cars/hyundai/SantaFe.png",
-      name: "Hyundai Sonata",
+      name: "SantaFe",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -61,7 +61,7 @@ var cars = {
   toyota: {
     Camry: {
       image: "img/cars/toyota/Camry.jpg",
-      name: "Toyota Camry",
+      name: "Camry",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -71,7 +71,7 @@ var cars = {
     },
     Corolla: {
       image: "img/cars/toyota/Corolla.png",
-      name: "Toyota Corolla",
+      name: "Corolla",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -82,7 +82,7 @@ var cars = {
 
     Prius: {
       image: "img/cars/toyota/Prius.webp",
-      name: "Toyota Prius",
+      name: "Prius",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -92,7 +92,7 @@ var cars = {
     },
     Fortuner: {
       image: "img/cars/toyota/Fortuner.png",
-      name: "Toyota Fortuner",
+      name: "Fortuner",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -104,7 +104,7 @@ var cars = {
   suzuki: {
     Swift: {
       image: "img/cars/suzuki/swift.webp",
-      name: "Suzuki Swift",
+      name: "Swift",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -114,7 +114,7 @@ var cars = {
     },
     Alto: {
       image: "img/cars/suzuki/Alto.jpg",
-      name: "Suzuki Alto",
+      name: "Alto",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -124,7 +124,7 @@ var cars = {
     },
     Mehran: {
       image: "img/cars/suzuki/Mehran.jpg",
-      name: "Suzuki Mehran",
+      name: "Mehran",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -134,7 +134,7 @@ var cars = {
     },
     Carry: {
       image: "img/cars/suzuki/Carry.jpg",
-      name: "Suzuki Carry",
+      name: "Carry",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -146,7 +146,7 @@ var cars = {
   honda: {
     Civic: {
       image: "img/cars/honda/Civic.jpg",
-      name: "Honda Civic",
+      name: "Civic",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -156,7 +156,7 @@ var cars = {
     },
     City: {
       image: "img/cars/honda/city.jpg",
-      name: "Honda City",
+      name: "City",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -166,7 +166,7 @@ var cars = {
     },
     BRV: {
       image: "img/cars/honda/br-v.webp",
-      name: "Honda BR-V",
+      name: "BR-V",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -176,7 +176,7 @@ var cars = {
     },
     Hybrid: {
       image: "img/cars/honda/Hybrid.webp",
-      name: "Honda CR-V Hybrid",
+      name: "CR-V Hybrid",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -188,7 +188,7 @@ var cars = {
   kia: {
     Sportage: {
       image: "img/cars/kia/Sportage.png",
-      name: "Kia Sportage",
+      name: "Sportage",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -198,7 +198,7 @@ var cars = {
     },
     Sorento: {
       image: "img/cars/kia/Sorento.jpg",
-      name: "Kia Sorento",
+      name: "Sorento",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -208,7 +208,7 @@ var cars = {
     },
     Rio: {
       image: "img/cars/kia/Rio.jpg",
-      name: "Kia Rio",
+      name: "Rio",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -218,7 +218,7 @@ var cars = {
     },
     Stinger: {
       image: "img/cars/kia/Stinger.webp",
-      name: "Kia Stinger",
+      name: "Stinger",
       engine: "Smart Stream 2.5 MPi",
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
@@ -248,7 +248,7 @@ for (var key in cars) {
         class="card-img-top"
       />
       <div class="card-body">
-        <h1 class="card-title">${cars[key][key1].name}</h1>
+      <span>${key}</span><h1 class="card-title">${cars[key][key1].name}</h1>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
@@ -296,7 +296,7 @@ function filterCars() {
       <div class="card" style="width: 25rem">
         <img src="${carDetails.image}" class="card-img-top" />
         <div class="card-body">
-          <h1 class="card-title">${carDetails.name}</h1>
+        <h1 class="card-title">${carDetails.name}</h1>
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">

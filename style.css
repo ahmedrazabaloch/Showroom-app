@@ -286,8 +286,15 @@ section {
   color: var(--navy);
 }
 
-.card{
+.card {
   margin-bottom: 10px;
+}
+.card-title{
+  margin: 0;
+}
+img.card-img-top {
+  height: 150px;
+  object-fit: contain;
 }
 
 @media (max-width: 991px) {
