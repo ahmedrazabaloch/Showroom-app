@@ -240,6 +240,13 @@ for (var key in cars) {
 
   for (var key1 in cars[key]) {
     var carData = cars[key][key1];
+    var colorDiv = "";
+    for (var i = 0; i < carData.color.length; i++) {
+      colorDiv += `
+      <div id="divColor" style="background-color: ${carData.color[i]}"></div>
+      `;
+    }
+
     allCars.innerHTML += `
       <div class="card" style="width: 25rem">
       <img
@@ -247,7 +254,9 @@ for (var key in cars) {
         class="card-img-top"
       />
       <div class="card-body">
-      <span>${key.toUpperCase()}</span><h1 class="card-title">${carData.name}</h1>
+      <span>${key.toUpperCase()}</span><h1 class="card-title">${
+      carData.name
+    }</h1>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
@@ -263,7 +272,7 @@ for (var key in cars) {
           <img src="img/icons/full-tank.png" alt="" />${carData.FuelTank}
         </li>
         <li class="list-group-item">
-          <img src="img/icons/color.png" alt="" />  ${carData.color}
+          <img src="img/icons/color.png" alt="" /><div id="flex">${colorDiv}</div>
         </li>
         <li class="list-group-item">
           <img src="img/icons/price.png" alt="" /> ${carData.price}
@@ -284,9 +293,12 @@ function companyToBrand() {
   }
 }
 
+var showAll = document.getElementById("showAll");
+
 function filterCars() {
   var selectedCompany = company.value;
   var selectedBrand = brand.value;
+  showAll.innerText = "Show All";
 
   if (selectedCompany && selectedBrand) {
     var carDetails = cars[selectedCompany][selectedBrand];

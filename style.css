@@ -29,7 +29,7 @@ html {
 }
 
 section {
-  padding: 3rem 8.5% 0;
+  padding: 3rem 3.5% 0;
 }
 
 .heading {
@@ -82,7 +82,7 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  padding: 3rem 9%;
+  padding: 3rem 3%;
   z-index: 1000;
   background: #fff;
 }
@@ -327,6 +327,19 @@ img.card-img-top {
   background: var(--light-yellow);
   z-index: -1;
   clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+}
+
+#divColor {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: var(--border);
+  display: flex;
+  justify-content: space-between;
+}
+div#flex {
+  display: flex;
+  gap: 5px;
 }
 @media (max-width: 991px) {
   html {
