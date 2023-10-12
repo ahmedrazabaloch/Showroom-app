@@ -13,15 +13,6 @@ function buycars() {
   featured.display = "block";
 }
 
-// function selected(e) {
-//   var company = event.target;
-//   var selection = document.getElementById("selection");
-//   selection.innerHTML = company.innerHTML;
-//   var select = selection.innerHTML;
-
-//   console.log(select);
-// }
-
 var cars = {
   hyundai: {
     Sonata: {
@@ -248,33 +239,34 @@ for (var key in cars) {
   `;
 
   for (var key1 in cars[key]) {
+    var carData = cars[key][key1];
     allCars.innerHTML += `
       <div class="card" style="width: 25rem">
       <img
-        src="${cars[key][key1].image}"
+        src="${carData.image}"
         class="card-img-top"
       />
       <div class="card-body">
-      <span>${key}</span><h1 class="card-title">${cars[key][key1].name}</h1>
+      <span>${key.toUpperCase()}</span><h1 class="card-title">${carData.name}</h1>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          <img src="img/icons/engine.png" alt="" /> ${cars[key][key1].engine}
+          <img src="img/icons/engine.png" alt="" /> ${carData.engine}
         </li>
         <li class="list-group-item">
-          <img src="img/icons/speed-meter.png" alt="" />${cars[key][key1].MaxPower}
+          <img src="img/icons/speed-meter.png" alt="" />${carData.MaxPower}
         </li>
         <li class="list-group-item">
-          <img src="img/icons/car-door.png" alt="" />${cars[key][key1].door}
+          <img src="img/icons/car-door.png" alt="" />${carData.door}
         </li>
         <li class="list-group-item">
-          <img src="img/icons/full-tank.png" alt="" />${cars[key][key1].FuelTank}
+          <img src="img/icons/full-tank.png" alt="" />${carData.FuelTank}
         </li>
         <li class="list-group-item">
-          <img src="img/icons/color.png" alt="" /> ${cars[key][key1].color}
+          <img src="img/icons/color.png" alt="" />  ${carData.color}
         </li>
         <li class="list-group-item">
-          <img src="img/icons/price.png" alt="" /> ${cars[key][key1].price}
+          <img src="img/icons/price.png" alt="" /> ${carData.price}
         </li>
       </ul>
     </div>
