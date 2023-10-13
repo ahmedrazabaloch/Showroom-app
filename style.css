@@ -123,7 +123,7 @@ section {
   font-size: 7.5vw;
   text-transform: uppercase;
   padding: 10rem 0;
-  line-height: 9.5rem;
+  line-height: 100%;
 }
 #find {
   padding: 2.5rem 0;

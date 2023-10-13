@@ -8,9 +8,8 @@ setTimeout(function () {
 function buycars() {
   var services = document.getElementById("services").style;
   services.display = "block";
-    var find = document.getElementById("find").style;
-    find.display = "block";
-
+  var find = document.getElementById("find").style;
+  find.display = "block";
 }
 
 var cars = {
@@ -233,9 +232,10 @@ var allCars = document.getElementById("allCars");
 
 brand.innerHTML = `<option value="">Choice a car</option>`;
 
+
 for (var key in cars) {
   company.innerHTML += `
-  <option value="${key}">${key.toUpperCase()}</option>
+  <option value="${key}">${key.toUpperCase()}</option>s
   `;
 
   for (var key1 in cars[key]) {
@@ -290,10 +290,8 @@ function companyToBrand() {
     brand.innerHTML += `
     <option value="${key}">${key.toUpperCase()}</option>
   `;
-  }   
+  }
 }
-
-var showAll = document.getElementById("showAll");
 
 function filterCars() {
   var featured = document.getElementById("featured").style;
@@ -301,8 +299,7 @@ function filterCars() {
 
   var selectedCompany = company.value;
   var selectedBrand = brand.value;
-  // showAll.innerText = "Show All";
-  showAll.style.display = "none";
+  showAll.innerText = "Show All";
   if (selectedCompany && selectedBrand) {
     var carDetails = cars[selectedCompany][selectedBrand];
 
