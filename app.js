@@ -1,9 +1,9 @@
-setTimeout(function () {
-  var carAnimition = document.getElementById("animition1");
-  carAnimition.style.display = "none";
-  var hiddenItem = document.getElementById("hiddenItem");
-  hiddenItem.style.display = "inline-block";
-}, 4000);
+// setTimeout(function () {
+//   var carAnimition = document.getElementById("animition1");
+//   carAnimition.style.display = "none";
+//   var hiddenItem = document.getElementById("hiddenItem");
+//   hiddenItem.style.display = "inline-block";
+// }, 4000);
 
 function buycars() {
   var services = document.getElementById("services").style;
@@ -244,7 +244,8 @@ for (var key in cars) {
       <div id="divColor" style="background-color: ${carData.color[i]}"></div>
       `;
     }
-
+    showAll = carData;
+    // console.log(showAll);
     allCars.innerHTML += `
       <div class="card" style="width: 25rem">
       <img
@@ -280,13 +281,12 @@ for (var key in cars) {
       `;
   }
 }
-var showAll = document.querySelector(".showAll");
+// var showAll = document.querySelector(".showAll");
 
 function companyToBrand() {
-  brand.innerHTML = "";
+  // brand.innerHTML = "";
   brand.innerHTML = `<option value="" class="showAll">Choice a car</option>
   `;
-  showAll.innerHTML = "Show All";
   for (var key in cars[company.value]) {
     brand.innerHTML += `
     <option value="${key}" >${key.toUpperCase()}</option>
@@ -297,6 +297,10 @@ function companyToBrand() {
 function filterCars() {
   var featured = document.getElementById("featured").style;
   featured.display = "block";
+
+  var selectedCompany = company.value;
+  var selectedBrand = brand.value;
+  // showAll.innerText = "Show All";
 
   var selectedCompany = company.value;
   var selectedBrand = brand.value;
@@ -332,9 +336,7 @@ function filterCars() {
         </ul>
       </div>
     `;
+  } else {
+    allCars.innerHTML = "Please select a company and a car model.";
   }
-
-  // else  {
-  //   allCars.innerHTML = "Please select a company and a car model.";
-  // }
 }
