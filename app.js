@@ -1,9 +1,9 @@
-// setTimeout(function () {
-//   var carAnimition = document.getElementById("animition1");
-//   carAnimition.style.display = "none";
-//   var hiddenItem = document.getElementById("hiddenItem");
-//   hiddenItem.style.display = "inline-block";
-// }, 4000);
+setTimeout(function () {
+  var carAnimition = document.getElementById("animition1");
+  carAnimition.style.display = "none";
+  var hiddenItem = document.getElementById("hiddenItem");
+  hiddenItem.style.display = "inline-block";
+}, 4000);
 
 function buycars() {
   var services = document.getElementById("services").style;
@@ -244,7 +244,6 @@ for (var key in cars) {
       <div id="divColor" style="background-color: ${carData.color[i]}"></div>
       `;
     }
-    showAll = carData;
     allCars.innerHTML += `
       <div class="card" style="width: 25rem">
       <img
@@ -282,8 +281,7 @@ for (var key in cars) {
 }
 
 function companyToBrand() {
-  // brand.innerHTML = "";
-  brand.innerHTML = `<option value="" class="showAll">Choice a car</option>
+  brand.innerHTML = `<option value="">Choice a car</option>
   `;
   for (var key in cars[company.value]) {
     brand.innerHTML += `

@@ -312,7 +312,7 @@ img.card-img-top {
 }
 
 #hiddenItem {
-  /* display: none; */
+  display: none;
 }
 
 .card-body > span {
