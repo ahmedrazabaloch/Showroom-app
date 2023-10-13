@@ -245,7 +245,6 @@ for (var key in cars) {
       `;
     }
     showAll = carData;
-    // console.log(showAll);
     allCars.innerHTML += `
       <div class="card" style="width: 25rem">
       <img
@@ -281,7 +280,6 @@ for (var key in cars) {
       `;
   }
 }
-// var showAll = document.querySelector(".showAll");
 
 function companyToBrand() {
   // brand.innerHTML = "";
@@ -294,49 +292,101 @@ function companyToBrand() {
   }
 }
 
+var showAll = document.querySelector(".showAll");
+
 function filterCars() {
   var featured = document.getElementById("featured").style;
   featured.display = "block";
-
-  var selectedCompany = company.value;
-  var selectedBrand = brand.value;
-  // showAll.innerText = "Show All";
-
-  var selectedCompany = company.value;
-  var selectedBrand = brand.value;
   showAll.innerText = "Show All";
-  if (selectedCompany && selectedBrand) {
-    var carDetails = cars[selectedCompany][selectedBrand];
 
-    allCars.innerHTML = `
-      <div class="card" style="width: 25rem">
-        <img src="${carDetails.image}" class="card-img-top" />
-        <div class="card-body">
-        <h1 class="card-title">${carDetails.name}</h1>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <img src="img/icons/engine.png" alt="" /> ${carDetails.engine}
-          </li>
-          <li class="list-group-item">
-            <img src="img/icons/speed-meter.png" alt="" /> ${carDetails.MaxPower}
-          </li>
-          <li class="list-group-item">
-            <img src="img/icons/car-door.png" alt="" /> ${carDetails.door}
-          </li>
-          <li class="list-group-item">
-            <img src="img/icons/full-tank.png" alt="" /> ${carDetails.FuelTank}
-          </li>
-          <li class="list-group-item">
-          <img src="img/icons/color.png" alt="" /><div id="flex">${colorDiv}</div>
-          </li>
-          <li class="list-group-item">
-            <img src="img/icons/price.png" alt="" /> ${carDetails.price}
-          </li>
-        </ul>
-      </div>
-    `;
+  var selectedCompany = company.value;
+  var selectedBrand = brand.value;
+
+  if (!selectedCompany && !selectedBrand) {
+    allCars.innerHTML = "";
+    for (var key in cars) {
+      for (var key1 in cars[key]) {
+        var carData = cars[key][key1];
+        var colorDiv = "";
+        for (var i = 0; i < carData.color.length; i++) {
+          colorDiv += `
+            <div id="divColor" style="background-color: ${carData.color[i]}"></div>
+          `;
+        }
+        allCars.innerHTML += `
+          <div class="card" style="width: 25rem">
+            <img src="${carData.image}" class="card-img-top" />
+            <div class="card-body">
+              <span>${key.toUpperCase()}</span>
+              <h1 class="card-title">${carData.name}</h1>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <img src="img/icons/engine.png" alt="" /> ${carData.engine}
+              </li>
+              <li class="list-group-item">
+                <img src="img/icons/speed-meter.png" alt="" /> ${
+                  carData.MaxPower
+                }
+              </li>
+              <li class="list-group-item">
+                <img src="img/icons/car-door.png" alt="" /> ${carData.door}
+              </li>
+              <li class="list-group-item">
+                <img src="img/icons/full-tank.png" alt="" /> ${carData.FuelTank}
+              </li>
+              <li class="list-group-item">
+                <img src="img/icons/color.png" alt="" />
+                <div id="flex">${colorDiv}</div>
+              </li>
+              <li class="list-group-item">
+                <img src="img/icons/price.png" alt="" /> ${carData.price}
+              </li>
+            </ul>
+          </div>
+        `;
+      }
+    }
   } else {
-    allCars.innerHTML = "Please select a company and a car model.";
+    if (selectedCompany && selectedBrand) {
+      var carDetails = cars[selectedCompany][selectedBrand];
+      var colorDiv = "";
+      for (var i = 0; i < carDetails.color.length; i++) {
+        colorDiv += `
+          <div id="divColor" style="background-color: ${carDetails.color[i]}"></div>
+        `;
+      }
+      allCars.innerHTML = `
+        <div class="card" style="width: 25rem">
+          <img src="${carDetails.image}" class="card-img-top" />
+          <div class="card-body">
+            <h1 class="card-title">${carDetails.name}</h1>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <img src="img/icons/engine.png" alt="" /> ${carDetails.engine}
+            </li>
+            <li class="list-group-item">
+              <img src="img/icons/speed-meter.png" alt="" /> ${carDetails.MaxPower}
+            </li>
+            <li class="list-group-item">
+              <img src="img/icons/car-door.png" alt="" /> ${carDetails.door}
+            </li>
+            <li class="list-group-item">
+              <img src="img/icons/full-tank.png" alt="" /> ${carDetails.FuelTank}
+            </li>
+            <li class="list-group-item">
+              <img src="img/icons/color.png" alt="" />
+              <div id="flex">${colorDiv}</div>
+            </li>
+            <li class="list-group-item">
+              <img src="img/icons/price.png" alt="" /> ${carDetails.price}
+            </li>
+          </ul>
+        </div>
+      `;
+    } else {
+      allCars.innerHTML = "Please select a company and a car model.";
+    }
   }
 }
