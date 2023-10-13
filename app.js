@@ -21,7 +21,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     Tucson: {
@@ -31,7 +31,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     Accent: {
@@ -41,7 +41,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     SantaFe: {
@@ -51,7 +51,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
   },
@@ -63,7 +63,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     Corolla: {
@@ -73,7 +73,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
 
@@ -84,7 +84,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     Fortuner: {
@@ -94,7 +94,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
   },
@@ -106,7 +106,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     Alto: {
@@ -116,7 +116,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     Mehran: {
@@ -126,7 +126,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     Carry: {
@@ -136,7 +136,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
   },
@@ -148,7 +148,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     City: {
@@ -158,7 +158,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     BRV: {
@@ -168,7 +168,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     Hybrid: {
@@ -178,7 +178,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
   },
@@ -190,7 +190,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     Sorento: {
@@ -200,7 +200,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     Rio: {
@@ -210,7 +210,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
     Stinger: {
@@ -220,7 +220,7 @@ var cars = {
       door: "4 doors",
       FuelTank: "60 (Ltr.)",
       MaxPower: "132 (180)/6200",
-      color: ["White", "Black", "Red"],
+      color: ["Black","White","Red"],
       price: "112 Lakh",
     },
   },
@@ -231,7 +231,6 @@ var brand = document.getElementById("brand");
 var allCars = document.getElementById("allCars");
 
 brand.innerHTML = `<option value="">Choice a car</option>`;
-
 
 for (var key in cars) {
   company.innerHTML += `
@@ -323,7 +322,7 @@ function filterCars() {
             <img src="img/icons/full-tank.png" alt="" /> ${carDetails.FuelTank}
           </li>
           <li class="list-group-item">
-            <img src="img/icons/color.png" alt="" /> ${carDetails.color}
+          <img src="img/icons/color.png" alt="" /><div id="flex">${colorDiv}</div>
           </li>
           <li class="list-group-item">
             <img src="img/icons/price.png" alt="" /> ${carDetails.price}
