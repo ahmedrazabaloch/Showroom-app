@@ -8,8 +8,9 @@ setTimeout(function () {
 function buycars() {
   var services = document.getElementById("services").style;
   services.display = "block";
-  var find = document.getElementById("find").style;
-  find.display = "block";
+    var find = document.getElementById("find").style;
+    find.display = "block";
+
 }
 
 var cars = {
@@ -289,7 +290,7 @@ function companyToBrand() {
     brand.innerHTML += `
     <option value="${key}">${key.toUpperCase()}</option>
   `;
-  }
+  }   
 }
 
 var showAll = document.getElementById("showAll");
