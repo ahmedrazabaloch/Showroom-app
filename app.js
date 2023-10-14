@@ -228,7 +228,7 @@ var company = document.getElementById("company");
 var brand = document.getElementById("brand");
 var allCars = document.getElementById("allCars");
 
-brand.innerHTML = `<option value="">Choice a car</option>`;
+brand.innerHTML = `<option value="">Choose a Car</option>`;
 
 for (var key in cars) {
   company.innerHTML += `
@@ -279,7 +279,7 @@ for (var key in cars) {
 }
 
 function companyToBrand() {
-  brand.innerHTML = `<option value="">Choice a car</option>
+  brand.innerHTML = `<option value="">Choose a Car</option>
   `;
   for (var key in cars[company.value]) {
     brand.innerHTML += `
