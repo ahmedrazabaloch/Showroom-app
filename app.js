@@ -293,7 +293,7 @@ var showAll = document.querySelector(".showAll");
 function filterCars() {
   var featured = document.getElementById("featured").style;
   featured.display = "block";
-  showAll.innerText = "SHOW All";
+  showAll.innerText = "SHOW ALL";
 
   var selectedCompany = company.value;
   var selectedBrand = brand.value;
