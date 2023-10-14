@@ -113,16 +113,16 @@ section {
 }
 
 .home {
-  padding-top: 10rem;
+  padding-top: 7.5vw;
   text-align: center;
   overflow-x: hidden;
 }
 
 .home h3 {
   color: var(--navy);
-  font-size: 7.5vw;
+  font-size: 12rem;
   text-transform: uppercase;
-  padding: 10rem 0;
+  padding: 8rem 0;
   line-height: 100%;
 }
 #find {
@@ -304,10 +304,12 @@ img.card-img-top {
   transform: scale(1.1);
   cursor: pointer;
 }
+
 #animition1 {
   position: absolute;
-  top: 48%;
-  left: 30vw;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 
