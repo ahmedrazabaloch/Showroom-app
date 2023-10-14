@@ -28,9 +28,9 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
+/* section {
   padding: 3rem 3.5% 0;
-}
+} */
 
 .heading {
   padding-bottom: 4.5rem;
@@ -113,20 +113,18 @@ section {
 }
 
 .home {
-  padding-top: 7.5vw;
+  padding: 4vw 0;
   text-align: center;
   overflow-x: hidden;
+  min-height: 80vh;
 }
 
 .home h3 {
   color: var(--navy);
-  font-size: 12rem;
+  font-size: 10rem;
   text-transform: uppercase;
   padding: 8rem 0;
   line-height: 100%;
-}
-#find {
-  padding: 2.5rem 0;
 }
 
 .services .box-container {
@@ -181,15 +179,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-#services,
-#featured,
-#find {
-  display: none;
-  /* visibility: hidden; */
-}
-.list-group-item img {
-  width: 30px;
 }
 
 .list-group-item {
@@ -345,6 +334,32 @@ div#flex {
   display: flex;
   gap: 5px;
 }
+
+.box-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.boxHover {
+  width: 500px;
+}
+
+#services,
+#featured {
+  display: none;
+}
+#find {
+  text-align: center;
+  margin: 50px 0;
+}
+#find > a {
+  margin: 0 auto;
+}
+
+.list-group-item img {
+  width: 30px;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
