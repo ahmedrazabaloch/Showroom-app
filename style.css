@@ -354,6 +354,32 @@ div#flex {
 .list-group-item img {
   width: 30px;
 }
+/* Single Image Styling */
+
+#card-body {
+  z-index: 1;
+}
+#card-title {
+  font-size: 45px;
+}
+img#card-img-top {
+  height: 450px;
+}
+#list-group-flush {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#list-group-item {
+  border: unset;
+  gap: 15px;
+  border-right: 1px solid #dfdfdf;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+}
 
 @media (max-width: 991px) {
   html {

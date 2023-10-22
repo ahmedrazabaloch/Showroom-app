@@ -243,7 +243,7 @@ for (var key in cars) {
       `;
     }
     allCars.innerHTML += `
-      <div class="card" style="width: 25rem">
+      <div class="card" style="width: 31rem">
       <img
         src="${carData.image}"
         class="card-img-top"
@@ -310,7 +310,7 @@ function filterCars() {
           `;
         }
         allCars.innerHTML += `
-          <div class="card" style="width: 25rem">
+          <div class="card" style="width: 31rem">
             <img src="${carData.image}" class="card-img-top" />
             <div class="card-body">
               <span>${key.toUpperCase()}</span>
@@ -353,29 +353,29 @@ function filterCars() {
         `;
       }
       allCars.innerHTML = `
-        <div class="card" style="width: 25rem">
-          <img src="${carDetails.image}" class="card-img-top" />
-          <div class="card-body">
-            <h1 class="card-title">${carDetails.name}</h1>
+        <div class="card" style="width: 100%">
+          <img src="${carDetails.image}" class="card-img-top" id="card-img-top" />
+          <div class="card-body" id="card-body">
+            <h1 class="card-title" id="card-title">${carDetails.name}</h1>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
+          <ul class="list-group list-group-flush" id="list-group-flush">
+            <li class="list-group-item" id="list-group-item">
               <img src="img/icons/engine.png" alt="" /> ${carDetails.engine}
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="list-group-item">
               <img src="img/icons/speed-meter.png" alt="" /> ${carDetails.MaxPower}
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="list-group-item">
               <img src="img/icons/car-door.png" alt="" /> ${carDetails.door}
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="list-group-item">
               <img src="img/icons/full-tank.png" alt="" /> ${carDetails.FuelTank}
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="list-group-item">
               <img src="img/icons/color.png" alt="" />
               <div id="flex">${colorDiv}</div>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item" id="list-group-item">
               <img src="img/icons/price.png" alt="" /> ${carDetails.price}
             </li>
           </ul>
